@@ -82,7 +82,7 @@
 <meta name="description" content="统计&#x2F;机器学习&#x2F;B端产品">
 <meta property="og:type" content="website">
 <meta property="og:title" content="欢迎来到江富城的个人博客">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:url" content="http://fusion.github.io/index.html">
 <meta property="og:site_name" content="欢迎来到江富城的个人博客">
 <meta property="og:description" content="统计&#x2F;机器学习&#x2F;B端产品">
 <meta property="article:author" content="fusion">
@@ -116,7 +116,7 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://fusion.github.io/"/>
 
 
 
@@ -179,7 +179,7 @@
       
         
         <li class="menu-item menu-item-home">
-          <a href="/%20" rel="section">
+          <a href="/home/%20" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
@@ -217,11 +217,55 @@
           </a>
         </li>
       
+        
+        <li class="menu-item menu-item-message">
+          <a href="/message/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-comments"></i> <br />
+            
+            message
+          </a>
+        </li>
+      
 
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
       
     </ul>
   
 
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
   
 </nav>
 
@@ -245,12 +289,12 @@
   
   
 
-  <article class="post post-type-categories" itemscope itemtype="http://schema.org/Article">
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/02/01/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E2%80%94%E2%80%94%E7%BB%9F%E8%AE%A1%E5%9F%BA%E7%A1%80/">
+    <link itemprop="mainEntityOfPage" href="http://fusion.github.io/2020/02/01/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E2%80%94%E2%80%94%E7%BB%9F%E8%AE%A1%E5%9F%BA%E7%A1%80/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="fusion">
@@ -343,15 +387,15 @@
       
         
           
-            <p>  今天是我个人博客建立的第一天，之后我会不定期把我所学所见所感都分享在这个地方。<br>  那么，今天我就从之前跨考统计学过程中学到的统计学知识做一个分享，我按照章节的形式进行分享，第一个章节便是统计基础。<br>第一章    统计总观及基础<br>1.1    统计学是什么？<br>统计学（statistics）是收集、处理、分析、解释数据并从数据中得出结论的一门科学，其主要的分析方法有描述统计方法和推断统计方法。描述统计（prescriptive statistics）研究的是数据的收集、处理、汇总、图表展示、概括与分析等统计方法。推断统计（inferential statistics）是研究如何利用样本（sample）数据来推断总体（population）特征的统计方法。其中推断统计的主要内容为参数估计和假设检验。<br>（注：总体是包含研究的全部个体的集合；样本是从总体抽取的一部分元素的集合，构成样本的元素的数目成为样本量。）<br>   在统计学中，变量（variable）是描述观察对象某种特征的概念，其特点是从一次观察到下一次观察结果会呈现出差别或变化。变量观察的结果就是数据（data）。根据观察结果的不同，变量可以分为分类变量（categorical variable）、顺序变量（rank variable）以及数值型变量（metric variable）。其中分类变量是说明事物类别的一个名称，其取值是分类数据，顺序变量是说明事物有序类别的一个名称，其取值是顺序数据，数值型变量是说明事物数字特征的一个名称，其取值是数值型数据。数值型变量又可分为只能取可数值的离散型（discrete）变量和可以在一个或多个区间中取任何值的连续型（continuous）变量。<br>（注：在回归分析中，变量还可以分为随机变量和非随机变量。在推断统计中，还有像z统计量这类的理论（theoretical）变量和描述周围可以观察到的经验（empirical）变量。）<br>数据是变量的取值，根据计量尺度，数据便可分为分类，顺序和数值型三种，按收集方法，有观测（observed）和实验（experimental）两种，按时间状况，有在相同或相似时间点上不同空间取得的截面（cross-sectional）数据和在不同时间点上按时间顺序取得的时间序列（time series）数据。<br>在推断统计中，我们就会用到统计量（statistic）去推断或者估计参数（parameter）。统计量是用来描述样本特征的概括性数字度量，参数是用来描述总体特征的概括性数字度量。</p>
-<p>1.2     数据来源：抽样技术<br>抽样技术是从统计调查总体中抽取样本进行调查，获取数据然后对总体数字特征做出推断的技术。<br>   调查方式：（1）抽样调查 （2）普查 （3）统计报表 （4）重点调查 (5)典型调查<br>   抽样调查的步骤：<br>（1）    确定调研问题<br>（2）    抽样方案设计（自填式、面访式、电话式）<br>（3）    问卷设计<br>（4）    实施调查过程<br>（5）    数据处理分析<br>（6）    撰写实验报告（包括主题、范围、调查对象、资料收集方法、调查期参考期和报告期、抽样设计和估计程序、结论的描述、精确度、责任、参考文献）<br>数据的来源方式有两种：1.间接来源（第二手资料）：数据是由别人通过调查或者实验的方式搜集而来的，使用者只是找到它们并加以使用，如从统计报表获得数据。<br>优缺点：搜集容易，采集成本低，除了分析所要研究的问题，还可以提供问题背景，甚至可以帮助寻找问题解决的思路；但可能资料相关性不够，口径不一致，数据不准确，时效性差。<br>2.直接来源：通过自己的调查或实验活动，直接获得第一手数据。<br>调查数据：客观上已经存在，但需要通过调查或者询问才能获得的数据。<br>实验数据：通过实验方案的指导，通过控制一个或多个变量，在有控制的条件下得到的观测结果。<br>从总体抽取样本的方法看，可以分为两类抽样：</p>
-<ol>
-<li>非概率抽样：抽取样本时并不依据随机原则。主要运用于预调查和探索性研究。操作简单经济快速，但不能计算抽样误差，不能从概率意义控制误差，也容易产生系统误差，导致无法由样本推断总体。主要方法有：<br>（1）    判断选择：在抽取样本时，调查人员依据对调查目的和对调查对象的了解，人为确定样本单元。<br>（2）    方便抽样：在抽样时，依据方便的原则，以最大限度降低调查成本的目的。如拦截式。<br>（3）    自愿样本：不经过抽取，而是由自愿接受调查的单元组成样本。网上问卷：<br>（4）    配额抽样：将总体各单元按一定标准划分为若干类型，将样本数额分配到各类型中，从各类型中抽取样本的方法则没有严格限制。<br>（5）    流动抽样（捕获再捕获）：从总体中抽取一个样本，将样本每个个体标识后释放回总体中，经过一段时间充分混合后，再从总体中抽取一个样本，此时，该样本将包括已标识和未标识的个体，利用这两个样本信息对总体数量进行估计。野生动物的估计<br>（6）    滚雪球抽样：首先选择一组调查单位，对其实施调查后，再请他们提供另外一些属于研究总体的调查对象，调查人员根据所提供的线索，进行此后的调查。 稀少人群的调查</li>
-<li>概率抽样：依据随机原则，按照某种事先设计的程序，从总体中抽取部分单元的抽样方法。特点：按一定概率以随机原则抽取样本；每个单元被抽中的概率是已知的，或是可以计算出来的；当用样本对总体目标量进行估计时，要考虑样本被抽中的概率。<br>优缺点：目标变量估计值及其抽样误差可估计，得到对目标量进行推断的可靠程度，也可根据要求精度计算必要样本单元数。但操作复杂，技术要求较高，构建和维护样本框费用高，调查单元分散，耗时。</li>
-<li>几种基本抽样方法：<br>简单随机抽样（simple random sampling）是从抽样框内的N个抽样单元中随机抽取n个单元作为样本，在每次抽选中，所有未入样的待选单元入选样本的概率相等。<br>简单有单纯、基本、容易操作之意。<br>特点：简单直观，由于入样概率相等，用样本统计量对目标量进行估计及计算抽样误差比较方便；但是构造样本框困难，单元分散，调查困难，且没有利用其他辅助信息以提高估计效率。</li>
-</ol>
-
-          
+            今天是我个人博客建立的第一天，之后我会不定期把我所学所见所感都分享在这个地方。  那么，今天我就从之前跨考统计学过程中学到的统计学知识做一个分享，我按照章节的形式进行分享，第一个章节便是统计基础。第一章    统计总观及基础1.1    统计学是什么？统计学（statistics）是收集、处理、
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2020/02/01/%E7%BB%9F%E8%AE%A1%E5%AD%A6%E2%80%94%E2%80%94%E7%BB%9F%E8%AE%A1%E5%9F%BA%E7%A1%80/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -398,7 +442,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/02/01/hello-world/">
+    <link itemprop="mainEntityOfPage" href="http://fusion.github.io/2020/02/01/hello-world/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="fusion">
@@ -491,21 +535,15 @@
       
         
           
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-          
+          Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in 
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2020/02/01/hello-world/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -606,10 +644,10 @@
               
               
               <div class="site-state-item site-state-tags">
-                
-                  <span class="site-state-item-count">1</span>
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">标签</span>
-                
+                </a>
               </div>
             
 
@@ -812,6 +850,323 @@
 
 
   
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
 
 
 
